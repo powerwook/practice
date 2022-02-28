@@ -19,4 +19,4 @@ Regex_Pattern = r"\w{3}\W\w{10}\W\w{3}"
 Regex_Pattern = r"^\d\w{4}\.$"
 
 # 맥 푸시 확인
-test = "hahaha"
+test = "hahaha하하하"
