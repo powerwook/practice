@@ -29,3 +29,20 @@ Regex_Pattern = r"^[0-9]\w\w\w\w\.$"	# Do not delete 'r'.
 #문제조건1:숫자시작이므로 ^[0-9]
 #문제조건2:x가 word character이므로 \w\w\w\w
 #문제조건3:.으로 끝나야함 따라서 \.$를 해줬음.
+
+#7.Matching Specific Characters
+import re
+Regex_Pattern = r'^[1|2|3][1|2|0][0|s|x][0|3|a|A][s|u|x][.|,]'
+#or연산(|)하고 ^문자열시작이 핵심임
+
+#8.Excluding Specific Characters
+import re
+Regex_Pattern = r'^\D[^aeiou][^bcDF]\S[^AEIOU][^.,]$'	# Do not delete 'r'.
+#\D는 숫자가 아닌 것과 매치된다.
+
+
+#9.Matching Character Ranges
+import re
+Regex_Pattern = r'^[a-z][1-9][^a-z][^A-Z][A-Z]'	# Do not delete 'r'.
+# ^는 []안에서쓰이지않으면 문자열시작을 알리는것이 핵심이다.
+
