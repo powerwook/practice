@@ -45,5 +45,3 @@ y = 알파벳 + 숫자 + _ 중 하나
 """
 Regex_Pattern = r"^\d\w{4}\.$"
 
-# 맥 푸시 확인
-test = "hahaha하하하"
