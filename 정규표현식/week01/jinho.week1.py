@@ -46,3 +46,22 @@ import re
 Regex_Pattern = r'^[a-z][1-9][^a-z][^A-Z][A-Z]'	# Do not delete 'r'.
 # ^는 []안에서쓰이지않으면 문자열시작을 알리는것이 핵심이다.
 
+
+#10.Matching Word Boundaries
+import re
+Regex_Pattern = r'\b[aeiouAEIOU][a-zA-Z]*\b'# Do not delete 'r'.
+# The matched word can be of any length.
+# 이런 조건이 있어서,, 마지막에 반복(*)을해주었다.아아아아아ㅏ아아아
+
+#11.Capturing & Non-Capturing Groups
+import re
+Regex_Pattern = r'(ok){3,}'	# Do not delete 'r'.
+# 문제에서 ok를 3번반복하라했으니까
+
+#12 Alternative Matching
+import re
+Regex_Pattern = r'^(Mr|Mrs|Ms|Dr|Er)\.[a-zA-Z]{1,}$'	# Do not delete 'r'.
+# 일단 저 문자들로 시작한다했으니까 그룹핑한다음에 ^써줌
+# 그리고 \.은 .을의미
+# 마지막은 문자열 a-zA-Z니까저렇게써주고 1번이상이라고 문제에서 그랬으니까{1,}
+# 그리고 문자열을 저렇게 종료해야되니까$
