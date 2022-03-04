@@ -45,3 +45,30 @@ y = 알파벳 + 숫자 + _ 중 하나
 """
 Regex_Pattern = r"^\d\w{4}\.$"
 
+# 3월 2일
+#1. **Matching Specific Characters**
+Regex_Pattern = r'^[123][120][xs0][30Aa][xsu][.,]$'
+#2. **Excluding Specific Characters**
+Regex_Pattern = r'^[^0-9][^aeiou][^bcDF]\S[^AEIOU][^.,]$'
+#3. **Matching Character Ranges**
+Regex_Pattern = r'^[a-z][1-9][^a-z][^A-Z][A-Z]'
+
+# 3월 3일
+#1. **Matching Word Boundaries**
+Regex_Pattern = r'\b[aeiouAEIOU][a-zA-Z]*\b'
+#2. **Capturing & Non-Capturing Groups**
+Regex_Pattern = r'(ok){3,}'	
+#3. **Alternative Matching**
+Regex_Pattern = r'^(Mr\.|Mrs\.|Ms\.|Dr\.|Er\.)[a-zA-Z]+$'
+
+# 3월 4일
+#1. **Matching {x} Repetitions**
+Regex_Pattern = r'^[a-zA-Z02468]{40}[13579\s]{5}$'
+#2. **Matching {x, y} Repetitions**
+Regex_Pattern = r'^\w{1,2}[a-zA-Z]{3,}\W{,3}$'
+#3. **Matching Zero Or More Repetitions**
+Regex_Pattern = r'^\d{2,}[a-z]*[A-Z]*$'
+#4. **Matching One Or More Repetitions**
+Regex_Pattern = r'^\d+[A-Z]+[a-z]+$'
+#5. **Matching Ending Items**
+Regex_Pattern = r'^[a-zA-Z]*s$'
